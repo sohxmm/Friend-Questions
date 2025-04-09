@@ -1,13 +1,10 @@
-import { Suspense } from "react";
-import NameDisplay from "./components/NameDisplay";
+import QuestionFlow from './components/QuestionFlow'
 
-export default function Page() {
+export default function Home() {
   return (
-    <main className="p-6">
-      <h1 className="text-2xl font-bold">Friend Questions</h1>
-      <Suspense fallback={<div>Loading...</div>}>
-        <NameDisplay />
-      </Suspense>
+    <main className="min-h-screen flex flex-col items-center justify-center px-4 py-12">
+      <h1 className="text-3xl font-bold mb-4">Hey Soham 👋</h1>
+      <QuestionFlow />
     </main>
-  );
+  )
 }
